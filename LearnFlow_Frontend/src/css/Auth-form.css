@@ -1,0 +1,127 @@
+/* Auth Form */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 60px;
+}
+
+.auth-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(27, 58, 248, 0.1);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.form-group.error input {
+    border-color: #dc3545;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(45deg, var(--accent), var(--primary));
+    color: var(--text);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.auth-switch a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 1rem;
+        margin-top: 50px;
+    }
+
+    .auth-form {
+        padding: 2rem;
+        margin: 0;
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+    .form-group input {
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 0;
+    }
+
+    .auth-form {
+        padding: 1.5rem;
+        border-radius: 0;
+    }
+
+    .auth-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.8rem;
+    }
+} 
