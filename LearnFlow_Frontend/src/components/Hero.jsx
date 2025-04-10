@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <div>
-      <section class="hero">
+      <section className="hero">
         <h1>Apprenez à votre rythme</h1>
         <p>Découvrez notre sélection de cours en ligne</p>
       </section>

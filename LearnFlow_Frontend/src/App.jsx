@@ -12,6 +12,7 @@ import Signup from './pages/Auth/SignUp';
 import Login from './pages/Auth/LogIn';
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import Dashboard from './pages/Dashboard';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/register" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       <Footer />
     </Router>

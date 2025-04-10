@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer>
-      <div class="footer-content">
-        <div class="footer-section">
+      <div className="footer-content">
+        <div className="footer-section">
           <h4>À propos</h4>
           <ul>
             <li>
@@ -16,7 +16,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div class="footer-section">
+        <div className="footer-section">
           <h4>Légal</h4>
           <ul>
             <li>
@@ -30,7 +30,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div class="footer-section">
+        <div className="footer-section">
           <h4>Suivez-nous</h4>
           <ul>
             <li>
